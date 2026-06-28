@@ -17,12 +17,18 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.5;
     overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -36,6 +42,7 @@ a {
     margin: 0 auto;
     padding: 0 16px;
     position: relative;
+    z-index: 1;
 }
 
 .fade-in {
@@ -76,9 +83,11 @@ a {
 
 .navbar-brand {
     font-weight: 700;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    letter-spacing: 0;
     color: var(--primary);
+    text-align: center;
+    white-space: nowrap;
 }
 
 .back-btn {
@@ -104,6 +113,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .hero-bg {
@@ -118,9 +128,35 @@ a {
 }
 
 .hero-logo {
-    max-width: 350px;
-    max-height: 250px;
+    display: block;
+    width: min(72vw, 280px);
+    height: auto;
+    max-height: 180px;
     object-fit: contain;
+}
+
+.footer-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 42vh;
+    min-height: 240px;
+    line-height: 0;
+    pointer-events: none;
+    overflow: hidden;
+    opacity: 0.55;
+}
+
+.footer-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+    filter: blur(3px);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 42%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 42%);
 }
 
 /* Branches List */
@@ -182,7 +218,9 @@ a {
     z-index: 90;
     padding: 16px 0;
     border-bottom: 1px solid var(--card-border);
-    margin: 0 -16px;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 .category-nav {
@@ -190,7 +228,11 @@ a {
     overflow-x: auto;
     gap: 12px;
     padding: 0 16px;
+    width: 100%;
+    max-width: 100vw;
+    min-width: 0;
     scrollbar-width: none; /* Firefox */
+    -webkit-overflow-scrolling: touch;
 }
 
 .category-nav::-webkit-scrollbar {
@@ -199,12 +241,14 @@ a {
 
 .cat-item {
     position: relative;
+    width: 100px;
     min-width: 100px;
+    max-width: 100px;
     height: 80px;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    flex-shrink: 0;
+    flex: 0 0 100px;
     transition: transform 0.3s ease, border 0.3s ease;
     border: 1px solid var(--card-border);
 }
@@ -215,6 +259,7 @@ a {
 }
 
 .cat-item img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -301,6 +346,7 @@ a {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 4px;
+    overflow-wrap: anywhere;
 }
 
 .menu-desc {
@@ -328,4 +374,29 @@ a {
     padding-bottom: 8px;
     border-bottom: 1px solid var(--card-border);
     color: var(--text-main);
+}
+
+@media (max-width: 420px) {
+    .navbar .container {
+        padding: 0 12px;
+    }
+
+    .back-btn {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        height: 150px;
+    }
+
+    .branch-card,
+    .menu-item {
+        border-radius: 14px;
+        gap: 12px;
+    }
+
+    .menu-img {
+        width: 78px;
+        height: 78px;
+    }
 }
