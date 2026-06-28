@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cakery - The Village Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                <span>Back</span>
+            </a>
+            <div class="navbar-brand">The Village Menu</div>
+            <div style="width: 60px;"></div>
+        </div>
+    </nav>
+
+    <div class="hero fade-in">
+        <img class="hero-logo" src="logo-cakery.png" alt="Cakery Cafe Logo">
+    </div>
+
+    <div class="category-nav-wrapper fade-in" style="animation-delay: 0.1s;">
+        <div class="category-nav">
+            <div class="cat-item active" data-target="all">
+                <img src="assets/menu/الحلويات/كيكة كيندر.jpg" alt="All">
+                <div class="cat-item-overlay"><span>All</span></div>
+            </div>
+            <div class="cat-item" data-target="desserts">
+                <img src="assets/menu/الحلويات/سان سبيستيان.jpg" alt="Desserts">
+                <div class="cat-item-overlay"><span>الحلويات</span></div>
+            </div>
+            <div class="cat-item" data-target="hot-drinks">
+                <img src="assets/menu/مشروبات ساخنة/كابتشينو.jpg" alt="Hot Drinks">
+                <div class="cat-item-overlay"><span>مشروبات ساخنة</span></div>
+            </div>
+            <div class="cat-item" data-target="cold-drinks">
+                <img src="assets/menu/مشروبات باردة/موكا بيضاء مثلجة.jpg" alt="Cold Drinks">
+                <div class="cat-item-overlay"><span>مشروبات باردة</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container fade-in" style="animation-delay: 0.2s;">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search menu items...">
+        </div>
+
+        <div class="menu-list">
+            
+            <!-- Desserts -->
+            <h2 class="section-header" id="desserts">الحلويات (Desserts)</h2>
+            
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/خبز الشو بالشوكولاتة.jpg" alt="Cracking Choux Bun" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Cracking Choux Bun</div>
+                    <div class="menu-desc">خبز الشو بالشوكولاتة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/كوكو ميكس بيري.jpg" alt="Coco Mixberry" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Coco Mixberry</div>
+                    <div class="menu-desc">كوكو ميكس بيري</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/كيكة كيندر.jpg" alt="Kinder Cake" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Kinder Cake</div>
+                    <div class="menu-desc">كيكة كيندر</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/سان سبيستيان.jpg" alt="San Sebastian" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">San Sebastian</div>
+                    <div class="menu-desc">سان سبيستيان</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/تيراميسو.jpg" alt="Tiramisu" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Tiramisu</div>
+                    <div class="menu-desc">تيراميسو</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/كيكة فوندون شوكولاتة.jpg" alt="Chocolate Fondue" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Chocolate Fondue</div>
+                    <div class="menu-desc">كيكة فوندون شوكولاتة</div>
+                </div>
+            </div>
+
+            <!-- Hot Drinks -->
+            <h2 class="section-header" id="hot-drinks">مشروبات ساخنة (Hot Drinks)</h2>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات ساخنة/أمريكانو.jpg" alt="Americano" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Americano</div>
+                    <div class="menu-desc">أمريكانو</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات ساخنة/كابتشينو.jpg" alt="Cappuccino" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Cappuccino</div>
+                    <div class="menu-desc">كابتشينو</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات ساخنة/كورتادو.jpg" alt="Cortado" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Cortado</div>
+                    <div class="menu-desc">كورتادو</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات ساخنة/اسبريسو.jpg" alt="Espresso" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Espresso</div>
+                    <div class="menu-desc">اسبريسو</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات ساخنة/فلات وايت.jpg" alt="Flat White" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Flat White</div>
+                    <div class="menu-desc">فلات وايت</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات ساخنة/هوت شوكليت.jpg" alt="Hot Chocolate" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Hot Chocolate</div>
+                    <div class="menu-desc">هوت شوكليت</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات ساخنة/لاتيه ساخن.jpg" alt="Latte" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Latte</div>
+                    <div class="menu-desc">لاتيه</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات ساخنة/لاتيه اسباني.jpg" alt="Spanish Latte" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Spanish Latte</div>
+                    <div class="menu-desc">سبانيش لاتيه</div>
+                </div>
+            </div>
+
+            <!-- Cold Drinks -->
+            <h2 class="section-header" id="cold-drinks">مشروبات باردة (Cold Drinks)</h2>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/كيكري سجنيتشر.jpg" alt="Cakery Signature" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Cakery Signature</div>
+                    <div class="menu-desc">كيكري سجنيتشر</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/أمريكانو مثلجة.jpg" alt="Iced Americano" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Iced Americano</div>
+                    <div class="menu-desc">أمريكانو بارد</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/ماتشا مثجلة.jpg" alt="Iced Matcha" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Iced Matcha</div>
+                    <div class="menu-desc">ماتشا باردة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/موكا داكن مثلجة.jpg" alt="Iced Dark Mocha" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Iced Dark Mocha</div>
+                    <div class="menu-desc">موكا باردة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/لاتيه مثلج.jpg" alt="Iced Latte" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Iced Latte</div>
+                    <div class="menu-desc">لاتيه بارد</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/سبانيش لاتيه مثلج.webp" alt="Spanish Iced Latte" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Spanish Iced Latte</div>
+                    <div class="menu-desc">سبانيش لاتيه بارد</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/شاي الباشن المثلج.jpg" alt="Passion Iced Tea" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Passion Iced Tea</div>
+                    <div class="menu-desc">شاي الباشن المثلج</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/شاي الخوخ المثلج.jpg" alt="Peach Iced Tea" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Peach Iced Tea</div>
+                    <div class="menu-desc">شاي الخوخ المثلج</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

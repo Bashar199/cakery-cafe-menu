@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cakery - Mall of Oman Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                <span>Back</span>
+            </a>
+            <div class="navbar-brand">Mall of Oman Menu</div>
+            <div style="width: 60px;"></div>
+        </div>
+    </nav>
+
+    <div class="hero fade-in">
+        <img class="hero-logo" src="logo-cakery.png" alt="Cakery Cafe Logo">
+    </div>
+
+    <div class="category-nav-wrapper fade-in" style="animation-delay: 0.1s;">
+        <div class="category-nav">
+            <div class="cat-item active" data-target="all">
+                <img src="assets/menu/مشروبات باردة/ماتشا مثجلة.jpg" alt="All">
+                <div class="cat-item-overlay"><span>All</span></div>
+            </div>
+            <div class="cat-item" data-target="desserts">
+                <img src="assets/menu/الحلويات/سان سبيستيان.jpg" alt="Desserts">
+                <div class="cat-item-overlay"><span>الحلويات</span></div>
+            </div>
+            <div class="cat-item" data-target="bakery">
+                <img src="assets/menu/الكرواسون والمخبوزات/كرواسون لوز.jpg" alt="Bakery">
+                <div class="cat-item-overlay"><span>الكرواسون والمخبوزات</span></div>
+            </div>
+            <div class="cat-item" data-target="cold-drinks">
+                <img src="assets/menu/مشروبات باردة/موكا بيضاء مثلجة.jpg" alt="Cold Drinks">
+                <div class="cat-item-overlay"><span>مشروبات باردة</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container fade-in" style="animation-delay: 0.2s;">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search menu items...">
+        </div>
+
+        <div class="menu-list">
+
+            <!-- Desserts -->
+            <h2 class="section-header" id="desserts">الحلويات (Desserts)</h2>
+            
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/خبز الشو بالشوكولاتة.jpg" alt="Cracking Choux Bun" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Cracking Choux Bun</div>
+                    <div class="menu-desc">خبز الشو بالشوكولاتة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/كوكو ميكس بيري.jpg" alt="Coco Mixberry" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Coco Mixberry</div>
+                    <div class="menu-desc">كوكو ميكس بيري</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/كيكة كيندر.jpg" alt="Kinder Cake" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Kinder Cake</div>
+                    <div class="menu-desc">كيكة كيندر</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/سان سبيستيان.jpg" alt="San Sebastian" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">San Sebastian</div>
+                    <div class="menu-desc">سان سبيستيان</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/تيراميسو.jpg" alt="Tiramisu" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Tiramisu</div>
+                    <div class="menu-desc">تيراميسو</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الحلويات/كيكة فوندون شوكولاتة.jpg" alt="Chocolate Fondue" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Chocolate Fondue</div>
+                    <div class="menu-desc">كيكة فوندون شوكولاتة</div>
+                </div>
+            </div>
+
+            
+            <!-- Bakery Goods -->
+            <h2 class="section-header" id="bakery">المخبوزات (Bakery Goods)</h2>
+            
+            <div class="menu-item">
+                <img src="assets/menu/الكرواسون والمخبوزات/كرواسون لوز.jpg" alt="Almond Croissant" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Almond Croissant</div>
+                    <div class="menu-desc">كرواسون لوز</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الكرواسون والمخبوزات/كرواسون جبن.jpg" alt="Cheese Croissant" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Cheese Croissant</div>
+                    <div class="menu-desc">كرواسون جبن</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الكرواسون والمخبوزات/كرواسون اللبنة والزعتر.jpg" alt="Labneh Zaatar Croissant" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Labneh Zaatar Croissant</div>
+                    <div class="menu-desc">كرواسون اللبنة والزعتر</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الكرواسون والمخبوزات/كرواسون سادة.jpg" alt="Plain Croissant" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Plain Croissant</div>
+                    <div class="menu-desc">كرواسون سادة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الكرواسون والمخبوزات/كرواسون ماتيلدا.jpg" alt="Matilda Croissant" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Matilda Croissant</div>
+                    <div class="menu-desc">كرواسون ماتيلدا</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الكرواسون والمخبوزات/سينامون رول.jpg" alt="Cinnamon Rolls" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Cinnamon Rolls</div>
+                    <div class="menu-desc">سينامون رول</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الكرواسون والمخبوزات/كروسون تفاح بالقرفة.jpg" alt="Apple Cinnamon" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Apple Cinnamon</div>
+                    <div class="menu-desc">كروسون تفاح بالقرفة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/الكرواسون والمخبوزات/ميني بابكا.jpg" alt="Mini Babka" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Mini Babka</div>
+                    <div class="menu-desc">ميني بابكا</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مخبوزات كاملة/رغيف بريوش.jpg" alt="Brioche Loaf" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Brioche Loaf</div>
+                    <div class="menu-desc">رغيف بريوش</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مخبوزات كاملة/سواردو حبوب كاملة 500 جرام.jpg" alt="Multi Seed Sourdough" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Multi Seed Sourdough</div>
+                    <div class="menu-desc">سواردو حبوب كاملة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مخبوزات كاملة/ساوردو جوز والقرفة 500 غرام.jpg" alt="Walnut & Cinnamon Sourdough" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Walnut & Cinnamon Sourdough</div>
+                    <div class="menu-desc">ساوردو جوز والقرفة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مخبوزات كاملة/سورادو سادة 500 جرام.jpg" alt="Plain Sourdough" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Plain Sourdough</div>
+                    <div class="menu-desc">سورادو سادة</div>
+                </div>
+            </div>
+
+
+            <!-- Cold Drinks -->
+            <h2 class="section-header" id="cold-drinks">مشروبات باردة (Cold Drinks)</h2>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/كيكري سجنيتشر.jpg" alt="Cakery Signature" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Cakery Signature</div>
+                    <div class="menu-desc">كيكري سجنيتشر</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/أمريكانو مثلجة.jpg" alt="Iced Americano" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Iced Americano</div>
+                    <div class="menu-desc">أمريكانو بارد</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/ماتشا مثجلة.jpg" alt="Iced Matcha" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Iced Matcha</div>
+                    <div class="menu-desc">ماتشا باردة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/موكا داكن مثلجة.jpg" alt="Iced Dark Mocha" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Iced Dark Mocha</div>
+                    <div class="menu-desc">موكا باردة</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/لاتيه مثلج.jpg" alt="Iced Latte" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Iced Latte</div>
+                    <div class="menu-desc">لاتيه بارد</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/سبانيش لاتيه مثلج.webp" alt="Spanish Iced Latte" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Spanish Iced Latte</div>
+                    <div class="menu-desc">سبانيش لاتيه بارد</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/شاي الباشن المثلج.jpg" alt="Passion Iced Tea" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Passion Iced Tea</div>
+                    <div class="menu-desc">شاي الباشن المثلج</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/menu/مشروبات باردة/شاي الخوخ المثلج.jpg" alt="Peach Iced Tea" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Peach Iced Tea</div>
+                    <div class="menu-desc">شاي الخوخ المثلج</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
